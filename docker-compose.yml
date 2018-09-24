@@ -4,4 +4,4 @@ webproxy:
    - "/home/nc-user/Docker/nginx/config/nginx.conf:/etc/nginx/nginx.conf"
   ports:
    - "8080:80"
-  command: [nginx, '-g', 'daemon off;']
+
