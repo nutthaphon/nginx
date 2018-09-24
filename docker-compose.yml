@@ -1,10 +1,8 @@
-web:
+webproxy:
   image: nginx
   volumes:
-   - /home/nc-user/Docker/nginx/etc:/etc/nginx
+   - ./nginx.conf:/etc/nginx/nginx.conf
   ports:
    - "8080:80"
-  environment:
-   - NGINX_HOST=ascii.in.th
-   - NGINX_PORT=80
   command: [nginx, '-g', 'daemon off;']
+  
